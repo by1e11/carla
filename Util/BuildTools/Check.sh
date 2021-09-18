@@ -113,7 +113,7 @@ if { ${LIBCARLA_RELEASE} || ${LIBCARLA_DEBUG}; }; then
   if [ "$(get_git_repository_version)" != "${CONTENT_TAG}" ]; then
     pushd .. >/dev/null
     rm -Rf ${LIBCARLA_TEST_CONTENT_FOLDER}
-    git clone -b ${CONTENT_TAG} https://github.com/carla-simulator/opendrive-test-files.git ${LIBCARLA_TEST_CONTENT_FOLDER}
+    git clone -b ${CONTENT_TAG} https://github.com.cnpmjs.org/carla-simulator/opendrive-test-files.git ${LIBCARLA_TEST_CONTENT_FOLDER}
     popd >/dev/null
   fi
 
