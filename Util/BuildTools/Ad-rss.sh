@@ -41,9 +41,9 @@ if [[ ! -d "${ADRSS_SRC_DIR}" ]]; then
   mkdir -p "${ADRSS_SRC_DIR}"
 
   pushd "${ADRSS_SRC_DIR}" >/dev/null
-  git clone --depth=1 -b v1.7.0 https://github.com/gabime/spdlog.git
-  git clone --depth=1 -b v2.3.0 https://github.com/carla-simulator/map.git
-  git clone --depth=1 -b v${ADRSS_VERSION} https://github.com/intel/ad-rss-lib.git
+  git clone --depth=1 -b v1.7.0 https://github.com.cnpmjs.org/gabime/spdlog.git
+  git clone --depth=1 -b v2.3.0 https://github.com.cnpmjs.org/carla-simulator/map.git
+  git clone --depth=1 -b v${ADRSS_VERSION} https://github.com.cnpmjs.org/intel/ad-rss-lib.git
   popd
 
   cat >"${ADRSS_COLCON_WORKSPACE}/colcon.meta" <<EOL
