@@ -16,7 +16,7 @@ BUILD_OSM2ODR=false
 GIT_PULL=true
 CURRENT_OSM2ODR_COMMIT=ee0c2b9241fef5365a6bc044ac82e6580b8ce936
 OSM2ODR_BRANCH=carla_osm2odr
-OSM2ODR_REPO=https://github.com/carla-simulator/sumo.git
+OSM2ODR_REPO=https://github.com.cnpmjs.org/carla-simulator/sumo.git
 
 OPTS=`getopt -o h --long help,rebuild,build,clean,carsim,no-pull -n 'parse-options' -- "$@"`
 
