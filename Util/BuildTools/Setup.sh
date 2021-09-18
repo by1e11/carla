@@ -70,9 +70,9 @@ else
 
   log "Retrieving libc++."
 
-  git clone --depth=1 -b release_80  https://github.com/llvm-mirror/llvm.git ${LLVM_BASENAME}-source
-  git clone --depth=1 -b release_80  https://github.com/llvm-mirror/libcxx.git ${LLVM_BASENAME}-source/projects/libcxx
-  git clone --depth=1 -b release_80  https://github.com/llvm-mirror/libcxxabi.git ${LLVM_BASENAME}-source/projects/libcxxabi
+  git clone --depth=1 -b release_80  https://github.com.cnpmjs.org/llvm-mirror/llvm.git ${LLVM_BASENAME}-source
+  git clone --depth=1 -b release_80  https://github.com.cnpmjs.org/llvm-mirror/libcxx.git ${LLVM_BASENAME}-source/projects/libcxx
+  git clone --depth=1 -b release_80  https://github.com.cnpmjs.org/llvm-mirror/libcxxabi.git ${LLVM_BASENAME}-source/projects/libcxxabi
 
   log "Compiling libc++."
 
@@ -213,7 +213,7 @@ else
 
   log "Retrieving rpclib."
 
-  git clone -b ${RPCLIB_PATCH} https://github.com/carla-simulator/rpclib.git ${RPCLIB_BASENAME}-source
+  git clone -b ${RPCLIB_PATCH} https://github.com.cnpmjs.org/carla-simulator/rpclib.git ${RPCLIB_BASENAME}-source
 
   log "Building rpclib with libc++."
 
@@ -281,7 +281,7 @@ else
 
   log "Retrieving Google Test."
 
-  git clone --depth=1 -b release-${GTEST_VERSION} https://github.com/google/googletest.git ${GTEST_BASENAME}-source
+  git clone --depth=1 -b release-${GTEST_VERSION} https://github.com.cnpmjs.org/google/googletest.git ${GTEST_BASENAME}-source
 
   log "Building Google Test with libc++."
 
@@ -345,7 +345,7 @@ else
 
   log "Retrieving Recast & Detour"
 
-  git clone https://github.com/carla-simulator/recastnavigation.git ${RECAST_BASENAME}-source
+  git clone https://github.com.cnpmjs.org/carla-simulator/recastnavigation.git ${RECAST_BASENAME}-source
 
   pushd ${RECAST_BASENAME}-source >/dev/null
 
@@ -510,7 +510,7 @@ if ${USE_CHRONO} ; then
 
   CHRONO_TAG=6.0.0
   # CHRONO_TAG=develop
-  CHRONO_REPO=https://github.com/projectchrono/chrono.git
+  CHRONO_REPO=https://github.com.cnpmjs.org/projectchrono/chrono.git
 
   CHRONO_SRC_DIR=chrono-source
   CHRONO_INSTALL_DIR=chrono-install
@@ -644,7 +644,7 @@ cp ${PROJ_LIB} ${LIBCARLA_INSTALL_CLIENT_FOLDER}/lib/
 # ==============================================================================
 
 PATCHELF_VERSION=0.12
-PATCHELF_REPO=https://github.com/NixOS/patchelf/archive/${PATCHELF_VERSION}.tar.gz
+PATCHELF_REPO=https://github.com.cnpmjs.org/NixOS/patchelf/archive/${PATCHELF_VERSION}.tar.gz
 
 PATCHELF_TAR=${PATCHELF_VERSION}.tar.gz
 PATCHELF_SOURCE_DIR=patchelf-src
